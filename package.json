@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "cssnano-preset-simple": "^4.0.0",
     "firebase": "^9.10.0",
     "moment": "^2.29.4",
     "next": "12.3.1",
