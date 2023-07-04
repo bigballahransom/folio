@@ -429,7 +429,7 @@ launch, and profitable monetization.
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I am firmiliar with WordPress as a solution, advertising and marketing priorities for small businesses, as well as collecting useful data from Google Analytics.
             </p>
-            <a href='https:www.heftmoves.com'>
+            <a href='https://heftmoves.com'>
             <button className='bg-teal-600 dark:bg-teal-400  mt-2 rounded-3xl hover:bg-teal-400 px-6 py-3 text-white dark:hover:bg-teal-600'>Try it out</button>
             </a>
           </div>
@@ -463,7 +463,7 @@ launch, and profitable monetization.
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I built the entire frontend, KPIs and data sections, algorythms for calculations, calendar functionality, <span className='text-gray-800 dark:text-gray-200'>and</span> some backend work.
             </p>
-            <a href='https:www.bookqube.com'>
+            <a href='https://bookqube.com'>
             <button className='bg-teal-600 dark:bg-teal-400 rounded-3xl hover:bg-teal-400 dark:hover:bg-teal-600 px-6 py-3 text-white mt-2'>Try it out</button>
             </a>
           </div>
