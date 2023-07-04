@@ -16,7 +16,7 @@ const ContactForm = () => {
         });
     };
   return (
-    <section className="text-gray-800 dark:text-gray-200 py-12">
+    <section className="text-gray-800 mb-12 pb-16 dark:text-gray-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-semibold text-center mb-4">Send me a 
