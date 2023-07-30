@@ -16,12 +16,12 @@ const ContactForm = () => {
         });
     };
   return (
-    <section className="text-gray-800 mb-12 pb-16 dark:text-gray-200">
+    <section className="dark:text-gray-800 mb-12 pb-16 text-gray-200 bg-gray-800 rounded-xl border shadow">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-semibold text-center mb-4">Send me a 
+          <h2 className="mt-4 text-3xl font-semibold text-center mb-4">Send me a 
           <span>
-          <TypeAnimation className='text-gray-800 dark:text-gray-200' sequence={[
+          <TypeAnimation className=' text-gray-200' sequence={[
                     ' message...',
                     8000,
                     ' project proposal...',
@@ -36,8 +36,8 @@ const ContactForm = () => {
           </span>
           </h2>
           <form ref={form} onSubmit={sendEmail}>
-              <div className='text-gray-900'>
-        <div className='text-left mb-2 dark:text-gray-200'>
+              <div className='dark:text-gray-900'>
+        <div className='text-left mb-2 text-gray-200'>
       <label className=' font-bold'>Name</label>
       </div>
       <div>

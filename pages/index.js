@@ -32,9 +32,9 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-semibold text-xl">R<span className='text-teal-600 dark:text-teal-400'>A</span>NSOM</h1>
-            <ul className="flex items-center">
+          <nav className="px-6 py-6 mb-12 flex justify-between dark:text-white fixed top-0 left-0 w-full bg-white shadow border dark:border-gray-900 dark:bg-gray-800 z-50">
+            <h1 className="font-semibold text-xl text-gray-800 dark:text-white">R<span className='text-teal-600 dark:text-teal-400'>A</span>NSOM</h1>
+            <ul className="flex items-center text-gray-800 dark:text-white">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -51,8 +51,8 @@ export default function Home() {
               </li> */}
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-3xl py-2 text-teal-600 uppercase font-semibold dark:text-teal-400 md:text-6xl">
+          <div className="text-center p-10 mt-6 py-10">
+            <h2 className="text-3xl mt-14 py-2 text-teal-600 uppercase font-semibold dark:text-teal-400 md:text-6xl">
               Andrew Ransom
             </h2>
             <h3 className="text-lg uppercase py-2 dark:text-white md:text-3xl">
