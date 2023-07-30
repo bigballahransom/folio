@@ -52,11 +52,11 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-3xl py-2 text-teal-600 uppercase font-semibold dark:text-teal-400 md:text-6xl">
               Andrew Ransom
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Business Professional and Web Developer.
+            <h3 className="text-lg uppercase py-2 dark:text-white md:text-3xl">
+              Business Professional / Web Developer.
             </h3>
             <p className="text-sm py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-sm">
             My professional career began in the moving industry. I ran a successful first company becoming one of
@@ -214,7 +214,7 @@ stroke="currentColor"
             />
           </svg>
           </div>
-          <p>Programming Languages: JavaScript, HTML, CSS, Python</p>
+          <p>JavaScript, HTML, CSS, Python</p>
         </div>
         <div className="flex items-center space-x-2">
             <div>
@@ -233,7 +233,7 @@ stroke="currentColor"
             />
           </svg>
           </div>
-          <p>Tools and Technologies: React, Node.js, Express.js, GitHub, MongoDB, Firebase, Sanity</p>
+          <p>React, Node.js, Express.js, GitHub, MongoDB, Firebase, Sanity</p>
         </div>
         <div className="flex items-center space-x-2">
             <div>
@@ -319,7 +319,7 @@ stroke="currentColor"
         <h3 className="text-lg font-semibold mb-2"> Certifications</h3>
         <ul className="list-disc list-inside">
           <li>Programming with JavaScript, Certificate from Meta</li>
-          <li>HTML and CSS in depth, Certificate from Meta</li>
+          <li>HTML and CSS, Certificate from Meta</li>
           <li>Version Control, Certificate from Meta</li>
           <li>Introduction to Front End Programming, Certificate from Meta</li>
           <li>Advanced React, Certificate from Meta</li>
@@ -357,7 +357,7 @@ stroke="currentColor"
 operations. Allow data driven decisions to be made for the business leading to reduced
 cost and improved productivity.
               </p>
-              <h4 className="py-4 text-teal-600">Firmiliar Tools</h4>
+              <h4 className="py-4 text-teal-600">Popular Tools</h4>
               <p className="text-gray-800 dark:text-gray-500 py-1">Microsoft Suite</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Tableau</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Power BI</p>
@@ -372,7 +372,7 @@ cost and improved productivity.
                 Do you have an idea for your next great website? Lets make it a
                 reality. Quick learner of different frameworks, layouts, and languages.
               </p>
-              <h4 className="py-4 text-teal-600">Firmiliar Tools</h4>
+              <h4 className="py-4 text-teal-600">Popular Tools</h4>
               <p className="text-gray-800 dark:text-gray-500 py-1">Next JS</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">React</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Tailwind CSS</p>
@@ -386,7 +386,7 @@ cost and improved productivity.
 environment and have demonstrated a strong background managing companies from ideation to market
 launch, and profitable monetization.
               </p>
-              <h4 className="py-4 text-teal-600">Firmiliar Tools</h4>
+              <h4 className="py-4 text-teal-600">Popular Tools</h4>
               <p className="text-gray-800 dark:text-gray-500 py-1">KanJam</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Full Scope</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Trello</p>
@@ -398,13 +398,13 @@ launch, and profitable monetization.
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Web Developer Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I am a multi-tool for solving business solutions on the web from
+              I am a multi tool for solving business solutions on the web, from
               <span className="text-teal-500"> React, Next, MongoDb </span>
-              as my go to frameworks, to utilizing preexitsing builders such as <span className="text-teal-500">wordpress </span>
+              as my go to frameworks, to utilizing pre-exitsing builders such as <span className="text-teal-500">wordpress </span>
               I am the man for the job when it comes to solving complex business or personal website or web-app needs.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer a wide range of services, including brand design ( figma / illustrator ),
+              I offer a wide range of services, including brand design figma / illustrator,
               programming and data analytics.
             </p>
           </div>
@@ -421,13 +421,13 @@ launch, and profitable monetization.
               <div className='my-8'>
             <h3 className="text-3xl py-1 dark:text-white ">Heft Moving</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Commercial use wordpress website with
+              Commercial use, wordpress website with
               <span className="text-teal-500"> custom forms </span>
               and <span className="text-teal-500">mobile friendly </span>
               interface.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I am firmiliar with WordPress as a solution, advertising and marketing priorities for small businesses, as well as collecting useful data from Google Analytics.
+              Solving business needs using WordPress as a solution, advertising and marketing priorities for small businesses, as well as collection of useful data from Google Analytics.
             </p>
             <a href='https://heftmoves.com'>
             <button className='bg-teal-600 dark:bg-teal-400  mt-2 rounded-3xl hover:bg-teal-400 px-6 py-3 text-white dark:hover:bg-teal-600'>Try it out</button>
@@ -463,7 +463,7 @@ launch, and profitable monetization.
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I built the entire frontend, KPIs and data sections, algorythms for calculations, calendar functionality, <span className='text-gray-800 dark:text-gray-200'>and</span> some backend work.
             </p>
-            <a href='https://bookqube.com'>
+            <a href='https://movers.bookqube.com'>
             <button className='bg-teal-600 dark:bg-teal-400 rounded-3xl hover:bg-teal-400 dark:hover:bg-teal-600 px-6 py-3 text-white mt-2'>Try it out</button>
             </a>
           </div>
