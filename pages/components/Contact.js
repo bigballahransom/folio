@@ -16,10 +16,10 @@ const ContactForm = () => {
         });
     };
   return (
-    <section className="dark:text-gray-800 mb-12 pb-16 text-gray-200 bg-gray-800 rounded-xl border shadow">
+    <section className="dark:text-gray-800  pb-16 text-gray-200 bg-teal-600 dark:bg-gray-800 rounded-tl-xl rounded-tr-xl border border-teal-600 dark:border-gray-900 shadow">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
-          <h2 className="mt-4 text-3xl font-semibold text-center mb-4">Send me a 
+          <h2 className="mt-6 text-3xl font-semibold dark:text-gray-200 text-center mb-4">Send me a 
           <span>
           <TypeAnimation className=' text-gray-200' sequence={[
                     ' message...',
@@ -56,7 +56,14 @@ const ContactForm = () => {
       <textarea className='p-2 w-full border shadow rounded-lg px-2 pb-8' name="message" />
       </div>
       <div className='text-left dark:text-gray-200'>
-      <button className='bg-teal-600 dark:bg-teal-400 rounded-3xl hover:bg-teal-400 dark:hover:bg-teal-600 px-6 py-3 text-white mt-2' type="submit" value="Send">Send</button>
+      <button className='flex gap-2 bg-gray-200 dark:bg-teal-400 rounded-3xl hover:bg-teal-400 dark:hover:bg-teal-600 px-6 py-3 text-teal-600 dark:text-white mt-2' type="submit" value="Send">
+      
+
+        Send
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+</svg>
+</button>
       </div>
       </div>
     </form>
