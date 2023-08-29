@@ -28,7 +28,7 @@ export default function Home() {
       <Head>
         <title>Andrew Ransom</title>
         <meta name="description" content="My personal website." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.jpeg" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
@@ -458,7 +458,7 @@ launch, and profitable monetization.
                 src={web3}
               /> */}
               <div className='my-8'>
-            <h3 className="text-3xl py-1 dark:text-white ">Qube Moving Software</h3>
+            <h3 className="text-3xl py-1 dark:text-whiste ">Qube Moving Software</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Commercial SAAS CRM built on
               <span className="text-teal-500"> Next JS </span>
