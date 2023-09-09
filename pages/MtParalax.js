@@ -11,7 +11,7 @@ export default function MtParalax() {
     offset: ["start start", "end start"],
   });
   const backgroundY = useTransform(scrollYProgress, [0,1], ["0%", "100%"]);
-  const textY = useTransform(scrollYProgress, [0,1], ["0%", "150%"]);
+  const textY = useTransform(scrollYProgress, [0,1], ["0%", "100%"]);
   return (
     <div ref={ref} className='w-full h-screen overflow-hidden relative grid px-8'>
         <motion.div 
