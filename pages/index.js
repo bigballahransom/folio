@@ -19,9 +19,11 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import ContactForm from "./components/Contact";
+import Projects from "./components/Projects";
+import MtParalax from "./MtParalax";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -30,7 +32,7 @@ export default function Home() {
         <meta name="description" content="My personal website." />
         <link rel="icon" href="/logo.jpeg" />
       </Head>
-      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className=" bg-white dark:bg-backdrop">
         <section className="min-h-screen">
           <nav className="px-6 py-6 mb-12 flex justify-between dark:text-white fixed top-0 left-0 w-full bg-white shadow border dark:border-gray-900 dark:bg-gray-800 z-50">
             <div className='flex items-center gap-2 '>
@@ -56,7 +58,8 @@ export default function Home() {
               </li> */}
             </ul>
           </nav>
-          <div className="text-center p-10 mt-6 py-10">
+          <MtParalax/>
+          {/* <div className="text-center p-10 mt-6 py-10">
             <h2 className="text-3xl mt-14 py-2 text-teal-600 uppercase font-semibold dark:text-teal-400 md:text-6xl">
               Andrew Ransom
             </h2>
@@ -77,21 +80,87 @@ launch, and profitable monetization. I am now focusing my efforts in the area of
               <a href='https://github.com/bigballahransom'>
               <AiFillGithub />
               </a>
+            </div> 
+            // working on paralax do not delete 
+            
+          </div>*/}
+        </section>
+        {/* <section>
+          <Projects />
+        </section> */}
+        <section className='px-6 md:px-12'>
+          <div>
+            {/* <h3 className="text-3xl py-1 dark:text-white mt-8 ">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Since the beginning of my journey as a freelance designer and
+              developer, I've done remote work for
+              <span className="text-teal-500"> agencies </span>
+              consulted for <span className="text-teal-500">startups </span>
+              and collaborated with talanted people to create digital products
+              for both business and consumer use.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              I offer from a wide range of services, including brand design figma/illustrator,
+              programming and teaching.
+            </p> */}
+          </div>
+          <div className="lg:flex gap-10 mt-0 ">
+            <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10  dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
+              <Image src={design}  alt='image' width={100} height={100} />
+              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">
+                Data Analytics
+              </h3>
+              <p className="py-2 text-sm">
+              Find weaknesses and validate daily business
+operations. Allow data driven decisions to be made for the business leading to reduced
+cost and improved productivity.
+              </p>
+              <h4 className="py-4 text-teal-600">Popular Tools</h4>
+              <p className="text-gray-800 dark:text-gray-500 py-1">Microsoft Suite</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">Tableau</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">Power BI</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">Google Analytics</p>
             </div>
-            {/* <div className="mx-auto justify-center items-center bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} alt='image' layout="fill" objectFit="cover" />
-            </div> */}
+            <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10  dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
+              <Image src={code}  alt='image' width={100} height={100} />
+              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">
+                Web Development
+              </h3>
+              <p className="py-2 text-sm">
+                Do you have an idea for your next great website? Lets make it a
+                reality. Quick learner of different frameworks, layouts, and languages.
+              </p>
+              <h4 className="py-4 text-teal-600">Popular Tools</h4>
+              <p className="text-gray-800 dark:text-gray-500 py-1">Next JS</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">React</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">MongoDb</p>
+            </div>
+            <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10 dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
+              <Image src={consulting}  alt='image' width={100} height={100} />
+              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">Project Management</h3>
+              <p className="py-2 text-sm">
+              I bring a track record of success working in a start-up
+environment and have demonstrated a strong background managing companies from ideation to market
+launch, and profitable monetization.
+              </p>
+              <h4 className="py-4 text-teal-600">Popular Tools</h4>
+              <p className="text-gray-800 dark:text-gray-500 py-1">KanJam</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">Full Scope</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">Trello</p>
+              <p className="text-gray-800 dark:text-gray-500 py-1">GitHub</p>
+            </div>
           </div>
         </section>
-        <section>
-        <div className="dark:bg-gray-800 p-8 rounded-xl text-gray-800 dark:text-gray-200 shadow-xl border dark:border-gray-800 mt-4">
-      <h2 className="text-2xl font-bold mb-4 mt-4 mb-2 ">Professional Skills</h2>
+        <section className='px-6 md:px-12'>
+        <div className="dark:bg-gray-800 p-8 rounded-xl text-gray-800 dark:text-gray-200 shadow-xl border dark:border-gray-800">
+      <h2 className="text-2xl font-bold mb-4 mt-4 mb-2 text-primary">Professional Skills</h2>
       <div className="flex flex-wrap grid sm:grid-cols-2 gap-4 mx-4">
         <div className="flex items-center space-x-2">
             <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -198,7 +267,7 @@ stroke="currentColor"
 </div>
 </div>
         </section>
-        <section>
+        <section  className='px-6 md:px-12'>
         <div className="dark:bg-gray-800 mt-8 p-8 rounded-xl text-gray-800 dark:text-gray-200 shadow-xl border dark:border-gray-800 mt-4">
       <h2 className="text-2xl font-bold mb-4 mt-4 mb-2 ">Technical Skills</h2>
       <div className="flex flex-wrap grid sm:grid-cols-2 gap-4 mx-4">
@@ -279,7 +348,7 @@ stroke="currentColor"
         <div className="flex items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -313,7 +382,7 @@ stroke="currentColor"
 </div>
 </div>
         </section>
-        <section>
+        <section className='px-6 md:px-12'>
         <div className="p-8 mt-8 dark:bg-gray-800 rounded-xl text-gray-800 dark:text-gray-200 shadow-xl border dark:border-gray-800 mt-4">
       <h2 className="text-2xl font-bold mb-4">Education and Training</h2>
       <div>
@@ -335,70 +404,7 @@ stroke="currentColor"
       </div>
     </div>
         </section>
-        <section>
-          <div>
-            {/* <h3 className="text-3xl py-1 dark:text-white mt-8 ">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design figma/illustrator,
-              programming and teaching.
-            </p> */}
-          </div>
-          <div className="lg:flex gap-10 mt-8">
-            <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10  dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
-              <Image src={design}  alt='image' width={100} height={100} />
-              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">
-                Data Analytics
-              </h3>
-              <p className="py-2 text-sm">
-              Find weaknesses and validate daily business
-operations. Allow data driven decisions to be made for the business leading to reduced
-cost and improved productivity.
-              </p>
-              <h4 className="py-4 text-teal-600">Popular Tools</h4>
-              <p className="text-gray-800 dark:text-gray-500 py-1">Microsoft Suite</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">Tableau</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">Power BI</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">Google Analytics</p>
-            </div>
-            <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10  dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
-              <Image src={code}  alt='image' width={100} height={100} />
-              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">
-                Web Development
-              </h3>
-              <p className="py-2 text-sm">
-                Do you have an idea for your next great website? Lets make it a
-                reality. Quick learner of different frameworks, layouts, and languages.
-              </p>
-              <h4 className="py-4 text-teal-600">Popular Tools</h4>
-              <p className="text-gray-800 dark:text-gray-500 py-1">Next JS</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">React</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">Tailwind CSS</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">MongoDb</p>
-            </div>
-            <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10 dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
-              <Image src={consulting}  alt='image' width={100} height={100} />
-              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">Project Management</h3>
-              <p className="py-2 text-sm">
-              I bring a track record of success working in a start-up
-environment and have demonstrated a strong background managing companies from ideation to market
-launch, and profitable monetization.
-              </p>
-              <h4 className="py-4 text-teal-600">Popular Tools</h4>
-              <p className="text-gray-800 dark:text-gray-500 py-1">KanJam</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">Full Scope</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">Trello</p>
-              <p className="text-gray-800 dark:text-gray-500 py-1">GitHub</p>
-            </div>
-          </div>
-        </section>
+  
         <section className="py-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Web Developer Portofolio</h3>

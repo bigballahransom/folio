@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "cssnano-preset-simple": "^4.0.0",
     "firebase": "^9.10.0",
+    "framer-motion": "^10.16.4",
     "moment": "^2.29.4",
     "next": "12.3.1",
     "react": "18.2.0",
