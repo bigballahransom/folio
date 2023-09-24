@@ -21,6 +21,7 @@ import web6 from "../public/web6.png";
 import ContactForm from "./components/Contact";
 import Projects from "./components/Projects";
 import MtParalax from "./MtParalax";
+import Merigo from "./components/Merigo";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -34,18 +35,36 @@ export default function Home() {
       </Head>
       <main className=" bg-white dark:bg-backdrop">
         <section className="min-h-screen">
-          <nav className="px-6 py-6 mb-12 flex justify-between dark:text-white fixed top-0 left-0 w-full bg-white shadow border dark:border-gray-900 dark:bg-backdrop z-50">
-            <div className='flex items-center gap-2 '>
+          <nav className="px-6 py-6 mb-12 flex justify-between items-center dark:text-white fixed top-0 left-0 w-full bg-white shadow border dark:border-gray-900 dark:bg-backdrop z-50">
+            <div className='flex items-center items-center  gap-2 '>
           <div className="flex items-center bg-gradient-to-b from-teal-500 rounded-full w-10 h-10 relative overflow-hidden ">
               <Image src={deved} alt='image' layout="fill" objectFit="cover" />
             </div>
-            <h1 className="font-semibold text-xl text-gray-800 dark:text-white">R<span className='text-teal-600 dark:text-primary'>A</span>NSOM</h1>
+            <h1 className="font-semibold text-xl text-gray-800 dark:text-white">R<span className='text-primary dark:text-primary'>A</span>NSOM</h1>
             </div>
-            <ul className="flex items-center text-gray-800 dark:text-white">
+            <div className='flex  items-center gap-4'>
+              <div className='flex gap-4'>
+              <div>
+            <a href='https://github.com/bigballahransom'>
+            <button className=' rounded-3xl text-white text-3xl hover:text-primary '>
+            <AiFillGithub/>
+            </button>
+            </a>
+            </div>
+            <div>
+            <a href='https://www.linkedin.com/in/andrew-ransom-b36a02266/'>
+            <button className=' rounded-3xl text-white text-3xl hover:text-primary '>
+            <AiFillLinkedin/>
+            </button>
+            </a>
+            </div>
+            </div>
+            <div>
+            <ul className="flex items-center text-gray-800 dark:text-white ">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className=" cursor-pointer text-2xl hover:text-primary mb-1"
                 />
               </li>
               {/* <li>
@@ -57,8 +76,12 @@ export default function Home() {
                 </a>
               </li> */}
             </ul>
+            </div>
+            </div>
+            
           </nav>
           <MtParalax/>
+          {/* <Merigo /> */}
           {/* <div className="text-center p-10 mt-6 py-10">
             <h2 className="text-3xl mt-14 py-2 text-teal-600 uppercase font-semibold dark:text-teal-400 md:text-6xl">
               Andrew Ransom
@@ -80,9 +103,8 @@ launch, and profitable monetization. I am now focusing my efforts in the area of
               <a href='https://github.com/bigballahransom'>
               <AiFillGithub />
               </a>
-            </div> 
-            // working on paralax do not delete 
-            
+            </div>
+            // working on paralax do not delete
           </div>*/}
         </section>
         {/* <section>
@@ -107,7 +129,7 @@ launch, and profitable monetization. I am now focusing my efforts in the area of
           <div className="lg:flex gap-10 mt-0 ">
             <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10  dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
               <Image src={design}  alt='image' width={100} height={100} />
-              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">
+              <h3 className="text-xl text-primary font-medium pt-8 pb-2 font-semibold ">
                 Data Analytics
               </h3>
               <p className="py-2 text-sm">
@@ -115,7 +137,7 @@ launch, and profitable monetization. I am now focusing my efforts in the area of
 operations. Allow data driven decisions to be made for the business leading to reduced
 cost and improved productivity.
               </p>
-              <h4 className="py-4 text-teal-600">Popular Tools</h4>
+              <h4 className="py-4 text-primary">Popular Tools</h4>
               <p className="text-gray-800 dark:text-gray-500 py-1">Microsoft Suite</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Tableau</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Power BI</p>
@@ -123,14 +145,14 @@ cost and improved productivity.
             </div>
             <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10  dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
               <Image src={code}  alt='image' width={100} height={100} />
-              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">
+              <h3 className="text-xl text-primary font-medium pt-8 pb-2 font-semibold ">
                 Web Development
               </h3>
               <p className="py-2 text-sm">
                 Do you have an idea for your next great website? Lets make it a
                 reality. Quick learner of different frameworks, layouts, and languages.
               </p>
-              <h4 className="py-4 text-teal-600">Popular Tools</h4>
+              <h4 className="py-4 text-primary">Popular Tools</h4>
               <p className="text-gray-800 dark:text-gray-500 py-1">Next JS</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">React</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Tailwind CSS</p>
@@ -138,13 +160,13 @@ cost and improved productivity.
             </div>
             <div className="text-center dark:bg-gray-800 shadow-lg p-10 rounded-xl my-10 dark:text-gray-200 shadow-xl border dark:border-gray-800 flex-1">
               <Image src={consulting}  alt='image' width={100} height={100} />
-              <h3 className="text-xl text-teal-600 font-medium pt-8 pb-2 font-semibold ">Project Management</h3>
+              <h3 className="text-xl text-primary font-medium pt-8 pb-2 font-semibold ">Project Management</h3>
               <p className="py-2 text-sm">
               I bring a track record of success working in a start-up
 environment and have demonstrated a strong background managing companies from ideation to market
 launch, and profitable monetization.
               </p>
-              <h4 className="py-4 text-teal-600">Popular Tools</h4>
+              <h4 className="py-4 text-primary">Popular Tools</h4>
               <p className="text-gray-800 dark:text-gray-500 py-1">KanJam</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Full Scope</p>
               <p className="text-gray-800 dark:text-gray-500 py-1">Trello</p>
@@ -179,7 +201,7 @@ launch, and profitable monetization.
             <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -198,7 +220,7 @@ launch, and profitable monetization.
             <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -216,7 +238,7 @@ launch, and profitable monetization.
         <div className="flex items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -233,7 +255,7 @@ launch, and profitable monetization.
         <div className="flex items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -250,7 +272,7 @@ launch, and profitable monetization.
         <div className="flex items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
 fill="none"
 viewBox="0 0 24 24"
 stroke="currentColor"
@@ -275,7 +297,7 @@ stroke="currentColor"
             <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -294,7 +316,7 @@ stroke="currentColor"
             <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -313,7 +335,7 @@ stroke="currentColor"
             <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -331,7 +353,7 @@ stroke="currentColor"
         <div className="flex items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -365,7 +387,7 @@ stroke="currentColor"
         <div className="flex items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-500"
+            className="h-6 w-6 text-primary"
 fill="none"
 viewBox="0 0 24 24"
 stroke="currentColor"
@@ -387,7 +409,7 @@ stroke="currentColor"
       <h2 className="text-2xl font-bold mb-4">Education and Training</h2>
       <div>
         <h3 className="text-lg font-semibold mb-2">BBA, Business Management</h3>
-        <p className="text-gray-400 mb-4">University of Memphis</p>
+        <p className="text-primary mb-4">University of Memphis</p>
       </div>
       <div>
         <h3 className="text-lg font-semibold mb-2"> Certifications</h3>
@@ -406,12 +428,12 @@ stroke="currentColor"
         </section>
   
         <section className="py-10">
-          <div>
+          <div className='mx-16'>
             <h3 className="text-3xl py-1 dark:text-white ">Web Developer Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I am a multi tool for solving business solutions on the web, from
-              <span className="text-teal-500"> React, Next, MongoDb </span>
-              as my go to frameworks, to utilizing pre-exitsing builders such as <span className="text-teal-500">wordpress </span>
+              <span className="text-primary"> React, Next, MongoDb </span>
+              as my go to frameworks, to utilizing pre-exitsing builders such as <span className="text-primary">wordpress </span>
               I am the man for the job when it comes to solving complex business or personal website or web-app needs.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -429,19 +451,19 @@ stroke="currentColor"
                 alt='image'
                 src={web1}
               /> */}
-              <div className='my-8'>
+              <div className='mx-16 dark:bg-gray-700 dark:shadow-none dark:border-none shadow-xl border-2 px-8 py-8 rounded-xl'>
             <h3 className="text-3xl py-1 dark:text-white ">Heft Moving</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Commercial use, wordpress website with
-              <span className="text-teal-500"> custom forms </span>
-              and <span className="text-teal-500">mobile friendly </span>
+              <span className="text-primary"> custom forms </span>
+              and <span className="text-primary">mobile friendly </span>
               interface.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Solving business needs using WordPress as a solution, advertising and marketing priorities for small businesses, as well as collection of useful data from Google Analytics.
             </p>
             <a href='https://heftmoves.com'>
-            <button className='bg-teal-600 dark:bg-teal-400  mt-2 rounded-3xl hover:bg-teal-400 px-6 py-3 text-white dark:hover:bg-teal-600'>Try it out</button>
+            <button className='bg-primary   mt-2 rounded-3xl hover:bg-darkblue px-6 py-3 text-white hover:text-primary '>Try it out</button>
             </a>
           </div>
             </div>
@@ -463,19 +485,19 @@ stroke="currentColor"
                 alt='image'
                 src={web3}
               /> */}
-              <div className='my-8'>
-            <h3 className="text-3xl py-1 dark:text-whiste ">Qube Moving Software</h3>
+              <div className=' mx-16 dark:bg-gray-700 shadow-xl border-2 dark:shadow-none dark:border-none px-8 py-8 rounded-xl'>
+            <h3 className="text-3xl py-1 dark:text-white ">Qube Moving Software</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Commercial SAAS CRM built on
-              <span className="text-teal-500"> Next JS </span>
-              for local moving companies that allows functionalities such as <span className="text-teal-500">building estimates, analyzing KPIs, managing jobs to completion, and full sales management </span>
+              <span className="text-primary"> Next JS </span>
+              for local moving companies that allows functionalities such as <span className="text-primary">building estimates, analyzing KPIs, managing jobs to completion, and full sales management </span>
               all in one application.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I built the entire frontend, KPIs and data sections, algorythms for calculations, calendar functionality, <span className='text-gray-800 dark:text-gray-200'>and</span> some backend work.
             </p>
             <a href='https://movers.bookqube.com'>
-            <button className='bg-teal-600 dark:bg-teal-400 rounded-3xl hover:bg-teal-400 dark:hover:bg-teal-600 px-6 py-3 text-white mt-2'>Try it out</button>
+            <button className='bg-primary   mt-2 rounded-3xl hover:bg-darkblue px-6 py-3 text-white hover:text-primary '>Try it out</button>
             </a>
           </div>
             </div>

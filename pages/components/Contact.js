@@ -16,12 +16,12 @@ const ContactForm = () => {
         });
     };
   return (
-    <section className="dark:text-gray-800  pb-16 text-gray-200 bg-teal-600 dark:bg-gray-800 rounded-tl-xl rounded-tr-xl border border-teal-600 dark:border-gray-900 shadow">
+    <section className="dark:text-gray-800  pb-16 text-gray-200 bg-primary dark:bg-gray-800 border border-teal-600 dark:border-gray-900 shadow">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <h2 className="mt-6 text-3xl font-semibold dark:text-gray-200 text-center mb-4">Send me a 
           <span>
-          <TypeAnimation className=' text-gray-200' sequence={[
+          <TypeAnimation className=' dark:text-gray-200' sequence={[
                     ' message...',
                     8000,
                     ' project proposal...',
@@ -36,27 +36,27 @@ const ContactForm = () => {
           </span>
           </h2>
           <form ref={form} onSubmit={sendEmail}>
-              <div className='dark:text-gray-900'>
-        <div className='text-left mb-2 text-gray-200'>
-      <label className=' font-bold'>Name</label>
+              <div className='text-gray-900'>
+        <div className='text-left mb-2 dark:text-gray-200'>
+      <label className='text-white font-bold'>Name</label>
       </div>
       <div>
       <input className='p-1 w-full border shadow rounded-lg px-2' type="text" name="user_name" />
       </div>
       <div className='text-left my-2 dark:text-gray-200'>
-      <label className=' font-bold'>Email</label>
+      <label className='text-white font-bold'>Email</label>
       </div>
       <div>
       <input className='p-1 w-full border shadow rounded-lg px-2' type="email" name="user_email" />
       </div>
       <div className='text-left my-2 dark:text-gray-200'>
-      <label className=' font-bold'>Message</label>
+      <label className='text-white font-bold'>Message</label>
       </div>
       <div>
       <textarea className='p-2 w-full border shadow rounded-lg px-2 pb-8' name="message" />
       </div>
       <div className='text-left dark:text-gray-200'>
-      <button className='flex gap-2 bg-gray-200 dark:bg-teal-400 rounded-3xl hover:bg-teal-400 dark:hover:bg-teal-600 px-6 py-3 text-teal-600 dark:text-white mt-2' type="submit" value="Send">
+      <button className='flex gap-2 bg-white   mt-2 rounded-3xl hover:bg-darkblue px-6 py-3 text-primary hover:text-white ' type="submit" value="Send">
       
 
         Send

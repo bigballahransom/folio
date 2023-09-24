@@ -18,7 +18,7 @@ export default function MtParalax() {
         style={{ y: textY }}
         className='font-bold text-white text-4xl md:text-3xl top-28 relative z-10'>
             <h1>ANDREW RANSOM</h1>
-            <h1 className='uppercase text-sm text-primary'>software enigineer</h1>
+            <h1 className='uppercase text-sm text-primary'>Frontend Developer & Business Executive</h1>
         </motion.div>
 
         <motion.div className='absolute bottom-0 right-0 left-0 top-0 z-5 border-bottom-2xl shadow border-bg-backdrop' style={{ y: backgroundY }}>
