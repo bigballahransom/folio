@@ -45,14 +45,14 @@ export default function Home() {
               <div className='flex gap-4'>
               <div>
             <a href='https://github.com/bigballahransom'>
-            <button className=' rounded-3xl text-primary dark-text-white text-3xl hover:text-darkblue '>
+            <button className=' rounded-3xl text-primary dark:text-white text-3xl hover:text-darkblue '>
             <AiFillGithub/>
             </button>
             </a>
             </div>
             <div>
             <a href='https://www.linkedin.com/in/andrew-ransom-b36a02266/'>
-            <button className=' rounded-3xl text-white text-3xl hover:text-primary '>
+            <button className='rounded-3xl text-primary dark:text-white text-3xl hover:text-darkblue '>
             <AiFillLinkedin/>
             </button>
             </a>
