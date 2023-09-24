@@ -16,7 +16,7 @@ export default function MtParalax() {
     <div ref={ref} className='w-full h-screen overflow-hidden relative grid px-8'>
         <motion.div 
         style={{ y: textY }}
-        className='font-bold text-white text-4xl md:text-3xl top-28 relative z-10'>
+        className='font-bold text-white text-3xl md:text-3xl top-28 relative z-10'>
             <h1>ANDREW RANSOM</h1>
             <h1 className='uppercase text-sm text-primary'>Frontend Developer & Business Executive</h1>
         </motion.div>
