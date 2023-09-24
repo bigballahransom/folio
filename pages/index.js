@@ -30,7 +30,7 @@ export default function Home() {
       <Head>
         <title>Andrew Ransom</title>
         <meta name="description" content="My personal website." />
-        <link rel="icon" href="/logo.jpeg" />
+        <link rel="icon" href="../public/logo.png" />
       </Head>
       <main className=" bg-white dark:bg-backdrop">
         <section className="min-h-screen">
