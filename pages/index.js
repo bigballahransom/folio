@@ -21,7 +21,6 @@ import web6 from "../public/web6.png";
 import ContactForm from "./components/Contact";
 import Projects from "./components/Projects";
 import MtParalax from "./MtParalax";
-import Merigo from "./components/Merigo";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -81,7 +80,6 @@ export default function Home() {
             
           </nav>
           <MtParalax/>
-          {/* <Merigo /> */}
           {/* <div className="text-center p-10 mt-6 py-10">
             <h2 className="text-3xl mt-14 py-2 text-teal-600 uppercase font-semibold dark:text-teal-400 md:text-6xl">
               Andrew Ransom
