@@ -426,7 +426,7 @@ stroke="currentColor"
         </section>
   
         <section className="py-10">
-          <div className='md:mx-16 mx-4 '>
+          <div className='md:mx-16 mx-8 '>
             <h3 className="text-3xl py-1 dark:text-white ">Web Developer Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I am a multi tool for solving business solutions on the web, from
@@ -449,7 +449,7 @@ stroke="currentColor"
                 alt='image'
                 src={web1}
               /> */}
-              <div className='md:mx-16 mx-4 dark:bg-gray-700 dark:shadow-none dark:border-none shadow-xl border-2 px-8 py-8 rounded-xl'>
+              <div className='md:mx-16 mx-8 dark:bg-gray-700 dark:shadow-none dark:border-none shadow-xl border-2 px-8 py-8 rounded-xl'>
             <h3 className="text-3xl py-1 dark:text-white ">Heft Moving</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Commercial use, wordpress website with
@@ -483,7 +483,7 @@ stroke="currentColor"
                 alt='image'
                 src={web3}
               /> */}
-              <div className='md:mx-16 mx-4  dark:bg-gray-700 shadow-xl border-2 dark:shadow-none dark:border-none px-8 py-8 rounded-xl'>
+              <div className='md:mx-16 mx-8  dark:bg-gray-700 shadow-xl border-2 dark:shadow-none dark:border-none px-8 py-8 rounded-xl'>
             <h3 className="text-3xl py-1 dark:text-white ">Qube Moving Software</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Commercial SAAS CRM built on
